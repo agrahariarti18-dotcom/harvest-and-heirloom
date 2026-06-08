@@ -210,6 +210,9 @@ function About() {
     <section id="about" className="py-24 lg:py-32">
       <div className="container-luxe grid lg:grid-cols-12 gap-12 items-start">
         <div className="lg:col-span-5">
+          <div className="mb-6 inline-flex items-center justify-center h-32 w-32 rounded-2xl bg-cream border border-border shadow-[var(--shadow-card)] p-3">
+            <img src={logoAsset.url} alt="HortiHand EXIM PVT LTD logo" className="h-full w-full object-contain" />
+          </div>
           <SectionEyebrow>Who We Are</SectionEyebrow>
           <h2 className="font-display text-4xl lg:text-5xl mt-4 leading-tight">
             A trusted bridge between India's <span className="gradient-text-gold italic">finest produce</span> and the world.
