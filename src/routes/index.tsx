@@ -5,12 +5,19 @@ import {
   CheckCircle2, MapPin, Phone, Mail, ArrowRight, MessageCircle, Menu, X,
   ChevronDown, Star, Factory, Building2, ShoppingBag, Hotel, Store, Users,
 } from "lucide-react";
-import heroDragon from "@/assets/hero-dragonfruit.jpg";
-import heroBrass from "@/assets/hero-brass.jpg";
+import { HeroCarousel } from "@/components/HeroCarousel";
 import productRed from "@/assets/product-red-dragon.jpg";
 import productWhite from "@/assets/product-white-dragon.jpg";
 import productStatue from "@/assets/product-brass-statue.jpg";
 import productDecor from "@/assets/product-brass-decor.jpg";
+import carouselContainerShip from "@/assets/carousel-container-ship.jpg";
+import carouselDragonRed from "@/assets/carousel-dragon-red.jpg";
+import carouselDragonWhite from "@/assets/carousel-dragon-white.jpg";
+import carouselBrassStatue from "@/assets/carousel-brass-statue.jpg";
+import carouselBrassDecor from "@/assets/carousel-brass-decor.jpg";
+import carouselDragonFarm from "@/assets/carousel-dragon-farm.jpg";
+import carouselPortCranes from "@/assets/carousel-port-cranes.jpg";
+import carouselBrassCollection from "@/assets/carousel-brass-collection.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
