@@ -5,12 +5,19 @@ import {
   CheckCircle2, MapPin, Phone, Mail, ArrowRight, MessageCircle, Menu, X,
   ChevronDown, Star, Factory, Building2, ShoppingBag, Hotel, Store, Users,
 } from "lucide-react";
-import heroDragon from "@/assets/hero-dragonfruit.jpg";
-import heroBrass from "@/assets/hero-brass.jpg";
+import { HeroCarousel } from "@/components/HeroCarousel";
 import productRed from "@/assets/product-red-dragon.jpg";
 import productWhite from "@/assets/product-white-dragon.jpg";
 import productStatue from "@/assets/product-brass-statue.jpg";
 import productDecor from "@/assets/product-brass-decor.jpg";
+import carouselContainerShip from "@/assets/carousel-container-ship.jpg";
+import carouselDragonRed from "@/assets/carousel-dragon-red.jpg";
+import carouselDragonWhite from "@/assets/carousel-dragon-white.jpg";
+import carouselBrassStatue from "@/assets/carousel-brass-statue.jpg";
+import carouselBrassDecor from "@/assets/carousel-brass-decor.jpg";
+import carouselDragonFarm from "@/assets/carousel-dragon-farm.jpg";
+import carouselPortCranes from "@/assets/carousel-port-cranes.jpg";
+import carouselBrassCollection from "@/assets/carousel-brass-collection.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -123,28 +130,24 @@ function Header() {
 }
 
 /* ---------- Hero ---------- */
+const heroSlides = [
+  { src: carouselContainerShip, alt: "Large international cargo container ship loaded with colorful shipping containers departing from Indian port at golden sunset, global export logistics", label: "Global Export Network — Container Ships Worldwide", category: "Logistics" },
+  { src: carouselDragonRed, alt: "Fresh premium red dragon fruits with vibrant magenta skin and green scales on wooden surface, morning dew drops, premium Indian agricultural export", label: "Premium Red Dragon Fruit — Farm Fresh Harvest", category: "Fresh Produce" },
+  { src: carouselBrassStatue, alt: "Intricately handcrafted Indian brass deity statue with detailed engravings and warm golden patina on dark velvet, artisan metal handicraft", label: "Handcrafted Brass Statues — Artisan Quality", category: "Handicrafts" },
+  { src: carouselDragonWhite, alt: "Elegant white dragon fruits with fresh green tips arranged on dark slate surface, premium exotic tropical fruit export quality", label: "White Dragon Fruit — Exotic & Premium", category: "Fresh Produce" },
+  { src: carouselBrassDecor, alt: "Collection of premium Indian brass home decor items including decorative vases, ornate bowls, and engraved plates on marble surface", label: "Brass Home Decor — Luxury Handcrafted", category: "Handicrafts" },
+  { src: carouselDragonFarm, alt: "Lush Indian dragon fruit plantation with rows of tall cactus plants bearing ripe red and white fruits, bright tropical morning sunlight", label: "Sustainable Dragon Fruit Farms — India", category: "Our Farms" },
+  { src: carouselPortCranes, alt: "Colorful shipping containers being loaded by gantry cranes at a busy international seaport terminal under blue sky", label: "Seaport Operations — Efficient Loading", category: "Logistics" },
+  { src: carouselBrassCollection, alt: "Traditional Indian brass handicraft collection with decorative oil lamps, incense holders, small statues, and engraved boxes on dark green fabric", label: "Brass Handicraft Collection — Traditional Art", category: "Handicrafts" },
+];
+
 function Hero() {
   return (
     <section className="relative overflow-hidden">
       <div className="grid lg:grid-cols-2">
-        {/* Visual split */}
-        <div className="relative h-[55vh] lg:h-[88vh] order-2 lg:order-1 grid grid-cols-2">
-          <div className="relative">
-            <img src={heroDragon} alt="Premium fresh red dragon fruit on the vine in an Indian orchard" className="absolute inset-0 h-full w-full object-cover" />
-            <div className="absolute inset-0" style={{ background: "var(--gradient-hero-overlay)" }} />
-            <div className="absolute bottom-6 left-6 text-cream">
-              <div className="text-[10px] uppercase tracking-[0.25em] text-gold">Division 01</div>
-              <div className="font-display text-2xl">Fresh Harvests</div>
-            </div>
-          </div>
-          <div className="relative">
-            <img src={heroBrass} alt="Handcrafted Indian brass artifacts on dark green velvet" className="absolute inset-0 h-full w-full object-cover" />
-            <div className="absolute inset-0" style={{ background: "var(--gradient-hero-overlay)" }} />
-            <div className="absolute bottom-6 left-6 text-cream">
-              <div className="text-[10px] uppercase tracking-[0.25em] text-gold">Division 02</div>
-              <div className="font-display text-2xl">Brass Treasures</div>
-            </div>
-          </div>
+        {/* Carousel area */}
+        <div className="relative h-[55vh] lg:h-[88vh] order-2 lg:order-1">
+          <HeroCarousel slides={heroSlides} interval={5000} />
         </div>
 
         {/* Copy */}
