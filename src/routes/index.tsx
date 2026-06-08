@@ -6,6 +6,7 @@ import {
   ChevronDown, Star, Factory, Building2, ShoppingBag, Hotel, Store, Users,
 } from "lucide-react";
 import { HeroCarousel } from "@/components/HeroCarousel";
+import logoAsset from "@/assets/hortihand-logo.png.asset.json";
 import productRed from "@/assets/product-red-dragon.jpg";
 import productWhite from "@/assets/product-white-dragon.jpg";
 import productStatue from "@/assets/product-brass-statue.jpg";
@@ -88,14 +89,15 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/85 border-b border-border">
       <div className="container-luxe flex items-center justify-between py-4">
-        <a href="#" className="flex items-center gap-3 group">
-          <div className="relative h-11 w-11 rounded-full bg-deep flex items-center justify-center shadow-[var(--shadow-gold)] group-hover:scale-105 transition-transform">
-            <Leaf className="h-5 w-5 text-gold" />
-            <span className="absolute inset-0 rounded-full ring-1 ring-[var(--gold)]/40" />
-          </div>
-          <div className="leading-tight">
+        <a href="#" className="flex items-center gap-3 group" aria-label="HortiHand EXIM PVT LTD">
+          <img
+            src={logoAsset.url}
+            alt="HortiHand EXIM PVT LTD logo"
+            className="h-14 w-14 object-contain group-hover:scale-105 transition-transform"
+          />
+          <div className="leading-tight hidden sm:block">
             <div className="font-display text-lg font-semibold tracking-wide">HortiHand <span className="text-gold">EXIM</span></div>
-            <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Pvt Ltd</div>
+            <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Fresh Harvests & Handicraft Treasures</div>
           </div>
         </a>
 
@@ -208,6 +210,9 @@ function About() {
     <section id="about" className="py-24 lg:py-32">
       <div className="container-luxe grid lg:grid-cols-12 gap-12 items-start">
         <div className="lg:col-span-5">
+          <div className="mb-6 inline-flex items-center justify-center h-32 w-32 rounded-2xl bg-cream border border-border shadow-[var(--shadow-card)] p-3">
+            <img src={logoAsset.url} alt="HortiHand EXIM PVT LTD logo" className="h-full w-full object-contain" />
+          </div>
           <SectionEyebrow>Who We Are</SectionEyebrow>
           <h2 className="font-display text-4xl lg:text-5xl mt-4 leading-tight">
             A trusted bridge between India's <span className="gradient-text-gold italic">finest produce</span> and the world.
@@ -630,13 +635,13 @@ function Footer() {
     <footer className="bg-[#0F2D1E] text-cream/80 pt-20 pb-8">
       <div className="container-luxe grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-4">
-          <div className="flex items-center gap-3 mb-5">
-            <div className="h-11 w-11 rounded-full bg-[var(--deep)] flex items-center justify-center">
-              <Leaf className="h-5 w-5 text-gold" />
+          <div className="flex items-center gap-4 mb-5">
+            <div className="h-20 w-20 rounded-2xl bg-cream/95 p-2 flex items-center justify-center shadow-[var(--shadow-gold)]">
+              <img src={logoAsset.url} alt="HortiHand EXIM PVT LTD logo" className="h-full w-full object-contain" />
             </div>
             <div>
-              <div className="font-display text-lg text-cream">HortiHand <span className="text-gold">EXIM</span></div>
-              <div className="text-[10px] uppercase tracking-[0.2em] text-cream/50">Pvt Ltd</div>
+              <div className="font-display text-xl text-cream">HortiHand <span className="text-gold">EXIM</span></div>
+              <div className="text-[10px] uppercase tracking-[0.2em] text-cream/60">Pvt Ltd · Since 2024</div>
             </div>
           </div>
           <p className="text-sm leading-relaxed max-w-sm">
