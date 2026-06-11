@@ -61,6 +61,7 @@ function Landing() {
       <About />
       <WhyUs />
       <Products />
+      <BrassShowcase />
       <Process />
       <Markets />
       <Certifications />
