@@ -72,6 +72,7 @@ function Landing() {
       <WhyUs />
       <Products />
       <BrassShowcase />
+      <JewelleryShowcase />
       <Process />
       <Markets />
       <Certifications />
