@@ -29,6 +29,16 @@ import showcaseHappyDrum from "@/assets/showcase/brass-happy-drum.png.asset.json
 import showcaseBowlCandle from "@/assets/showcase/brass-bowl-candle.png.asset.json";
 import showcaseBowlZen from "@/assets/showcase/brass-bowl-zen.png.asset.json";
 import showcaseBowlTable from "@/assets/showcase/brass-bowl-table.png.asset.json";
+import jewelTurquoise from "@/assets/jewellery/necklace-turquoise-blue.jpeg.asset.json";
+import jewelRose from "@/assets/jewellery/necklace-rose-pink.jpeg.asset.json";
+import jewelOlive from "@/assets/jewellery/necklace-olive-green.jpeg.asset.json";
+import jewelBlackWhite from "@/assets/jewellery/necklace-black-white.jpeg.asset.json";
+import jewelYellow from "@/assets/jewellery/set-yellow.jpeg.asset.json";
+import jewelTeal from "@/assets/jewellery/set-teal-stone.jpeg.asset.json";
+import jewelCoral from "@/assets/jewellery/set-coral-orange.jpeg.asset.json";
+import jewelGrey from "@/assets/jewellery/set-grey-stone.jpeg.asset.json";
+import jewelHorn from "@/assets/jewellery/horn-vase.jpeg.asset.json";
+import jewelHearts from "@/assets/jewellery/love-fiesta-hearts.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
