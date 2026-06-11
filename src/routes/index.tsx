@@ -409,6 +409,81 @@ function BrassShowcase() {
 }
 
 
+/* ---------- Jewellery Showcase ---------- */
+const jewelleryItems = [
+  { img: jewelTurquoise, name: "Turquoise & Lapis Layered Necklace", category: "Layered Necklace", desc: "Hand-knotted multi-strand with sea-green discs and cobalt accents on lilac cord." },
+  { img: jewelRose, name: "Rose Quartz Triple-Strand", category: "Beaded Necklace", desc: "Faceted blush stones wrapped in blush cotton — soft, romantic, statement piece." },
+  { img: jewelOlive, name: "Olive Glass & Shell Long Chain", category: "Long Chain", desc: "Translucent green glass beads paired with ivory shell florets on braided cord." },
+  { img: jewelBlackWhite, name: "Onyx & Pearl Monochrome", category: "Statement Necklace", desc: "Bold black-and-white tumbled stones knotted on jute — timeless contrast." },
+  { img: jewelYellow, name: "Citrine Yellow Stone Set", category: "Necklace · Earring · Bracelet", desc: "Speckled yellow stone trio gift-set with matching tassel earrings and bracelet." },
+  { img: jewelTeal, name: "Teal Jade Tumbled Set", category: "Necklace · Earring · Bracelet", desc: "Polished teal stones with silver spacers — coordinated three-piece collection." },
+  { img: jewelCoral, name: "Coral Sandstone Set", category: "Necklace · Earring · Bracelet", desc: "Warm coral nuggets with silver bead detailing — sunset palette gift set." },
+  { img: jewelGrey, name: "Pewter & Lavender Stone Set", category: "Necklace · Earring · Bracelet", desc: "Mineral grey tumbled beads with lilac highlights — understated luxury." },
+  { img: jewelHorn, name: "Buffalo Horn Decor Holder", category: "Horn Accessory", desc: "Hand-polished natural horn display piece — sustainable artisan craft." },
+  { img: jewelHearts, name: "Love Fiesta Hearts Set", category: "Gift Set", desc: "Rose-gold & gold heart-link necklace with matching earrings in premium gift box." },
+];
+
+function JewelleryShowcase() {
+  return (
+    <section id="jewellery" className="py-24 lg:py-32 bg-gradient-to-b from-[var(--cream-warm,_#f6efe3)] via-cream to-cream">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="text-center mb-16 max-w-3xl mx-auto">
+          <div className="inline-flex items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-brass mb-4">
+            <span className="divider-gold" /> Imitation Jewellery <span className="divider-gold" />
+          </div>
+          <h2 className="font-display text-4xl lg:text-5xl text-deep mb-4">
+            Hand-strung <span className="gradient-text-gold italic">jewellery</span> & artisan gift sets
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            Beaded necklaces, stone gift sets and signature accessories — handcrafted in India and ready for global retail, gifting and boutique export programmes.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
+          {jewelleryItems.map((item) => (
+            <article
+              key={item.name}
+              className="group relative overflow-hidden rounded-2xl bg-white shadow-[0_8px_30px_-12px_rgba(31,94,59,0.18)] hover:shadow-[var(--shadow-gold)] transition-all duration-500"
+            >
+              <div className="relative overflow-hidden aspect-[3/4] bg-[var(--cream-warm,_#f6efe3)]">
+                <img
+                  src={item.img.url}
+                  alt={item.name}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute top-3 left-3">
+                  <span className="inline-block bg-[var(--gold)]/95 text-[var(--deep)] text-[9px] uppercase tracking-[0.18em] px-2.5 py-1 rounded-full font-medium backdrop-blur">
+                    {item.category}
+                  </span>
+                </div>
+              </div>
+              <div className="p-5">
+                <h3 className="font-display text-deep text-lg mb-1.5 leading-tight">{item.name}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                <div className="mt-3 flex items-center gap-1.5 text-brass text-[11px] uppercase tracking-[0.22em] opacity-0 group-hover:opacity-100 transition-opacity">
+                  Enquire for Export <ArrowRight className="w-3 h-3" />
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div className="mt-14 text-center">
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 bg-[var(--deep)] text-cream px-8 py-4 rounded-full font-medium hover:bg-[var(--gold)] hover:text-[var(--deep)] transition-all shadow-[var(--shadow-gold)]"
+          >
+            Request Jewellery Catalogue <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+
 function DivisionHeader({ number, title, subtitle }: { number: string; title: string; subtitle: string }) {
   return (
     <div className="flex items-end justify-between flex-wrap gap-4 mb-8 pb-6 border-b border-border">
