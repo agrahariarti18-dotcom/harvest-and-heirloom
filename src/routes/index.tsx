@@ -19,6 +19,16 @@ import carouselBrassDecor from "@/assets/carousel-brass-decor.jpg";
 import carouselDragonFarm from "@/assets/carousel-dragon-farm.jpg";
 import carouselPortCranes from "@/assets/carousel-port-cranes.jpg";
 import carouselBrassCollection from "@/assets/carousel-brass-collection.jpg";
+import showcaseGramophone from "@/assets/showcase/brass-gramophone.jpeg.asset.json";
+import showcaseChakraDrum from "@/assets/showcase/brass-chakra-drum.jpeg.asset.json";
+import showcasePeacockDrum from "@/assets/showcase/brass-peacock-drum.jpeg.asset.json";
+import showcaseTrays from "@/assets/showcase/brass-trays.jpeg.asset.json";
+import showcaseSingingBowl from "@/assets/showcase/brass-singing-bowl.jpeg.asset.json";
+import showcaseChakraSymbols from "@/assets/showcase/brass-chakra-symbols.png.asset.json";
+import showcaseHappyDrum from "@/assets/showcase/brass-happy-drum.png.asset.json";
+import showcaseBowlCandle from "@/assets/showcase/brass-bowl-candle.png.asset.json";
+import showcaseBowlZen from "@/assets/showcase/brass-bowl-zen.png.asset.json";
+import showcaseBowlTable from "@/assets/showcase/brass-bowl-table.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -51,6 +61,7 @@ function Landing() {
       <About />
       <WhyUs />
       <Products />
+      <BrassShowcase />
       <Process />
       <Markets />
       <Certifications />
@@ -306,6 +317,86 @@ function Products() {
     </section>
   );
 }
+
+const showcaseItems = [
+  { img: showcaseGramophone, name: "Antique Brass Gramophone", category: "Heritage Decor", desc: "Working vintage gramophone with hand-spun brass horn and rosewood base — a statement collector's piece." },
+  { img: showcaseSingingBowl, name: "Tibetan Singing Bowl", category: "Wellness & Meditation", desc: "Hand-hammered brass bowl engraved with sacred mantras, paired with silk cushion and mallet." },
+  { img: showcaseHappyDrum, name: "7 Chakra Happy Drum", category: "Sound Healing", desc: "Tongue drum hand-painted with the seven chakras — resonant, meditative tones for wellness studios." },
+  { img: showcaseTrays, name: "Brass-Trimmed Serving Trays", category: "Luxury Tableware", desc: "Heritage-print trays with hand-finished brass edging — set of three for hospitality buyers." },
+  { img: showcasePeacockDrum, name: "Peacock Steel Tongue Drum", category: "Artisan Instruments", desc: "Steel drum with hand-applied peacock motif and Om symbol — tuned for harmonic resonance." },
+  { img: showcaseChakraSymbols, name: "9-Note Chakra Meditation Drum", category: "Spiritual Wellness", desc: "Nine-tongue drum etched with chakra glyphs and Om — preferred by yoga and meditation centres." },
+  { img: showcaseChakraDrum, name: "Silver Hammered Chakra Drum", category: "Sound Therapy", desc: "Compact 7-note drum with crystalline finish — perfect for therapy practices and gift retail." },
+  { img: showcaseBowlCandle, name: "Mantra Engraved Singing Bowl", category: "Ritual & Decor", desc: "Black-brass bowl with gold mantra engravings — styled for spa, ritual, and home-decor channels." },
+  { img: showcaseBowlZen, name: "Zen Meditation Bowl Set", category: "Premium Gifting", desc: "Polished brass bowl with carved Sanskrit script — packaged with wooden mallet for export gifting." },
+  { img: showcaseBowlTable, name: "Classic Sanskrit Singing Bowl", category: "Boutique Retail", desc: "Traditional dark-brass bowl with hand-carved Sanskrit — sized for retail-ready boutique display." },
+];
+
+function BrassShowcase() {
+  return (
+    <section className="py-24 lg:py-32 bg-gradient-to-b from-cream via-cream to-[var(--cream-warm,_#f6efe3)]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="text-center mb-16 max-w-3xl mx-auto">
+          <div className="inline-flex items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-brass mb-4">
+            <span className="divider-gold" /> Brass Showcase <span className="divider-gold" />
+          </div>
+          <h2 className="font-display text-4xl lg:text-5xl text-deep mb-4">
+            A curated gallery of <span className="gradient-text-gold italic">handcrafted</span> brass treasures
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            Each piece is shaped, engraved, and finished by master artisans — exported worldwide to boutique retailers, wellness studios, and luxury hospitality buyers.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {showcaseItems.map((item, i) => (
+            <article
+              key={item.name}
+              className={`group relative overflow-hidden rounded-2xl bg-white shadow-[0_8px_30px_-12px_rgba(31,94,59,0.18)] hover:shadow-[var(--shadow-gold)] transition-all duration-500 ${
+                i === 0 ? "sm:col-span-2 lg:col-span-2 lg:row-span-2" : ""
+              }`}
+            >
+              <div className={`relative overflow-hidden ${i === 0 ? "aspect-[4/5] lg:aspect-auto lg:h-[600px]" : "aspect-[4/5]"}`}>
+                <img
+                  src={item.img.url}
+                  alt={item.name}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-deep/90 via-deep/30 to-transparent opacity-90" />
+                <div className="absolute top-4 left-4">
+                  <span className="inline-block bg-[var(--gold)]/95 text-[var(--deep)] text-[10px] uppercase tracking-[0.2em] px-3 py-1.5 rounded-full font-medium backdrop-blur">
+                    {item.category}
+                  </span>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className={`font-display text-cream mb-2 ${i === 0 ? "text-3xl lg:text-4xl" : "text-xl lg:text-2xl"}`}>
+                    {item.name}
+                  </h3>
+                  <p className={`text-cream/85 leading-relaxed ${i === 0 ? "text-base lg:text-lg" : "text-sm"}`}>
+                    {item.desc}
+                  </p>
+                  <div className="mt-4 flex items-center gap-2 text-gold text-xs uppercase tracking-[0.25em] opacity-0 group-hover:opacity-100 transition-opacity">
+                    Enquire for Export <ArrowRight className="w-3.5 h-3.5" />
+                  </div>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div className="mt-14 text-center">
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 bg-[var(--deep)] text-cream px-8 py-4 rounded-full font-medium hover:bg-[var(--gold)] hover:text-[var(--deep)] transition-all shadow-[var(--shadow-gold)]"
+          >
+            Request Full Brass Catalogue <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 
 function DivisionHeader({ number, title, subtitle }: { number: string; title: string; subtitle: string }) {
   return (
