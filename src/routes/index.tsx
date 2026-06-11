@@ -19,6 +19,16 @@ import carouselBrassDecor from "@/assets/carousel-brass-decor.jpg";
 import carouselDragonFarm from "@/assets/carousel-dragon-farm.jpg";
 import carouselPortCranes from "@/assets/carousel-port-cranes.jpg";
 import carouselBrassCollection from "@/assets/carousel-brass-collection.jpg";
+import showcaseGramophone from "@/assets/showcase/brass-gramophone.jpeg.asset.json";
+import showcaseChakraDrum from "@/assets/showcase/brass-chakra-drum.jpeg.asset.json";
+import showcasePeacockDrum from "@/assets/showcase/brass-peacock-drum.jpeg.asset.json";
+import showcaseTrays from "@/assets/showcase/brass-trays.jpeg.asset.json";
+import showcaseSingingBowl from "@/assets/showcase/brass-singing-bowl.jpeg.asset.json";
+import showcaseChakraSymbols from "@/assets/showcase/brass-chakra-symbols.png.asset.json";
+import showcaseHappyDrum from "@/assets/showcase/brass-happy-drum.png.asset.json";
+import showcaseBowlCandle from "@/assets/showcase/brass-bowl-candle.png.asset.json";
+import showcaseBowlZen from "@/assets/showcase/brass-bowl-zen.png.asset.json";
+import showcaseBowlTable from "@/assets/showcase/brass-bowl-table.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
