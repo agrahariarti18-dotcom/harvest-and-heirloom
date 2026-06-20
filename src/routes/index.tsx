@@ -43,7 +43,7 @@ import jewelHearts from "@/assets/jewellery/love-fiesta-hearts.png.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "HortiHand EXIM PVT LTD — Premium Dragon Fruit & Brass Handicraft Exporter" },
+      { title: "HortiHand EXIM — Premium Dragon Fruit & Brass Handicraft Exporter" },
       { name: "description", content: "Exporting India's finest fresh dragon fruits and handcrafted brass treasures to global buyers. Quality-assured, certified, and shipped worldwide." },
       { property: "og:title", content: "HortiHand EXIM — Fresh Harvests & Handicraft Treasures" },
       { property: "og:description", content: "Global B2B export of premium dragon fruit and brass handicrafts from India." },
@@ -96,8 +96,8 @@ function TopBar() {
           <a href="mailto:exports@hortihand.com" className="hover:text-gold transition-colors flex items-center gap-1.5">
             <Mail className="h-3 w-3" /> exports@hortihand.com
           </a>
-          <a href="tel:+910000000000" className="hover:text-gold transition-colors flex items-center gap-1.5">
-            <Phone className="h-3 w-3" /> +91 00000 00000
+          <a href="tel:+919958096383" className="hover:text-gold transition-colors flex items-center gap-1.5">
+            <Phone className="h-3 w-3" /> +91 99580 96383
           </a>
         </span>
       </div>
@@ -111,10 +111,10 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/85 border-b border-border">
       <div className="container-luxe flex items-center justify-between py-4">
-        <a href="#" className="flex items-center gap-3 group" aria-label="HortiHand EXIM PVT LTD">
+        <a href="#" className="flex items-center gap-3 group" aria-label="HortiHand EXIM">
           <img
             src={logoAsset.url}
-            alt="HortiHand EXIM PVT LTD logo"
+            alt="HortiHand EXIM logo"
             className="h-14 w-14 object-contain group-hover:scale-105 transition-transform"
           />
           <div className="leading-tight hidden sm:block">
@@ -186,7 +186,7 @@ function Hero() {
               Exporting India's <span className="gradient-text-gold italic">finest</span> dragon fruits & brass handicrafts worldwide.
             </h1>
             <p className="text-base lg:text-lg text-cream/80 leading-relaxed mb-8 max-w-xl">
-              HortiHand EXIM PVT LTD connects global buyers with premium agricultural produce and handcrafted brass treasures — sourced directly from trusted growers and skilled artisans across India.
+              HortiHand EXIM connects global buyers with premium agricultural produce and handcrafted brass treasures — sourced directly from trusted growers and skilled artisans across India.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#contact" className="inline-flex items-center gap-2 bg-[var(--gold)] text-[var(--deep)] px-7 py-3.5 rounded-full font-medium hover:bg-[var(--brass)] hover:text-cream transition-all shadow-[var(--shadow-gold)]">
@@ -233,7 +233,7 @@ function About() {
       <div className="container-luxe grid lg:grid-cols-12 gap-12 items-start">
         <div className="lg:col-span-5">
           <div className="mb-6 inline-flex items-center justify-center h-32 w-32 rounded-2xl bg-cream border border-border shadow-[var(--shadow-card)] p-3">
-            <img src={logoAsset.url} alt="HortiHand EXIM PVT LTD logo" className="h-full w-full object-contain" />
+            <img src={logoAsset.url} alt="HortiHand EXIM logo" className="h-full w-full object-contain" />
           </div>
           <SectionEyebrow>Who We Are</SectionEyebrow>
           <h2 className="font-display text-4xl lg:text-5xl mt-4 leading-tight">
@@ -242,7 +242,7 @@ function About() {
         </div>
         <div className="lg:col-span-7 space-y-6">
           <p className="text-lg text-muted-foreground leading-relaxed">
-            HortiHand EXIM PVT LTD is a trusted Indian export company dedicated to delivering premium fresh produce and authentic handcrafted brass products to international markets. We combine agricultural excellence with traditional craftsmanship to provide global buyers with exceptional products that meet international quality standards.
+            HortiHand EXIM is a trusted Indian export company dedicated to delivering premium fresh produce and authentic handcrafted brass products to international markets. We combine agricultural excellence with traditional craftsmanship to provide global buyers with exceptional products that meet international quality standards.
           </p>
           <div className="grid sm:grid-cols-3 gap-6 pt-4">
             {[
@@ -744,7 +744,7 @@ function Contact() {
           <div className="space-y-5">
             {[
               { icon: Mail, label: "exports@hortihand.com" },
-              { icon: Phone, label: "+91 00000 00000" },
+              { icon: Phone, label: "+91 99580 96383" },
               { icon: MapPin, label: "India · Global Exports" },
             ].map(({ icon: Icon, label }) => (
               <div key={label} className="flex items-center gap-4">
@@ -814,11 +814,11 @@ function Footer() {
         <div className="lg:col-span-4">
           <div className="flex items-center gap-4 mb-5">
             <div className="h-20 w-20 rounded-2xl bg-cream/95 p-2 flex items-center justify-center shadow-[var(--shadow-gold)]">
-              <img src={logoAsset.url} alt="HortiHand EXIM PVT LTD logo" className="h-full w-full object-contain" />
+              <img src={logoAsset.url} alt="HortiHand EXIM logo" className="h-full w-full object-contain" />
             </div>
             <div>
               <div className="font-display text-xl text-cream">HortiHand <span className="text-gold">EXIM</span></div>
-              <div className="text-[10px] uppercase tracking-[0.2em] text-cream/60">Pvt Ltd · Since 2024</div>
+              <div className="text-[10px] uppercase tracking-[0.2em] text-cream/60">Since 2024</div>
             </div>
           </div>
           <p className="text-sm leading-relaxed max-w-sm">
@@ -851,7 +851,7 @@ function Footer() {
         </div>
       </div>
       <div className="container-luxe mt-16 pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs text-cream/50">
-        <div>© {new Date().getFullYear()} HortiHand EXIM PVT LTD. All rights reserved.</div>
+        <div>© {new Date().getFullYear()} HortiHand EXIM. All rights reserved.</div>
         <div>Crafted for global trade · Made in India</div>
       </div>
     </footer>
@@ -874,7 +874,7 @@ function SectionEyebrow({ children, tone = "light" }: { children: React.ReactNod
 function WhatsAppFab() {
   return (
     <a
-      href="https://wa.me/910000000000"
+      href="https://wa.me/919958096383"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
