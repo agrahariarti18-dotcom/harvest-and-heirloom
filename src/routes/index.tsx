@@ -6,6 +6,7 @@ import {
   ChevronDown, Star, Factory, Building2, ShoppingBag, Hotel, Store, Users,
 } from "lucide-react";
 import { HeroCarousel } from "@/components/HeroCarousel";
+import { PlantersShowcase } from "@/components/PlantersShowcase";
 import logoAsset from "@/assets/hortihand-logo.png.asset.json";
 import productRed from "@/assets/product-red-dragon.jpg";
 import productWhite from "@/assets/product-white-dragon.jpg";
@@ -73,6 +74,7 @@ function Landing() {
       <Products />
       <BrassShowcase />
       <JewelleryShowcase />
+      <PlantersShowcase />
       <Process />
       <Markets />
       <Certifications />
