@@ -105,7 +105,7 @@ const products: Product[] = [
     cover: blackStand.url,
     material: "Metal · Powder-coated iron",
     sizes: ["Small", "Medium"],
-    colors: [{ name: "Charcoal Black", swatch: "#2b2b2b", images: [blackStand.url] }],
+    colors: [{ name: "Charcoal Black", swatch: "#2b2b2b", images: [blackStand.url, blackTripodReal.url] }],
   },
   {
     id: "white-copper",
