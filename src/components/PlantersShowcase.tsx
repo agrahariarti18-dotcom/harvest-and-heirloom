@@ -12,6 +12,16 @@ import goldCage from "@/assets/planters/gold-cage.jpg.asset.json";
 import blackStand from "@/assets/planters/black-stand.jpg.asset.json";
 import whiteCopper from "@/assets/planters/white-copper.jpg.asset.json";
 import terracottaGeo from "@/assets/planters/terracotta-geo.jpg.asset.json";
+import globeBlueReal from "@/assets/planters/globe-blue-real.jpg.asset.json";
+import globeGoldReal from "@/assets/planters/globe-gold-real.jpg.asset.json";
+import globeCopperReal from "@/assets/planters/globe-copper-real.jpg.asset.json";
+import blackTripodReal from "@/assets/planters/black-tripod-real.jpg.asset.json";
+import brassCylinder from "@/assets/planters/brass-cylinder.jpg.asset.json";
+import enamelBlack from "@/assets/planters/enamel-black.jpg.asset.json";
+import enamelFloral from "@/assets/planters/enamel-floral.jpg.asset.json";
+import hangingIkat from "@/assets/planters/hanging-ikat.jpg.asset.json";
+import swirlWhite from "@/assets/planters/swirl-white.jpg.asset.json";
+import swirlBlack from "@/assets/planters/swirl-black.jpg.asset.json";
 
 type ColorVariant = { name: string; swatch: string; images: string[] };
 type Product = {
