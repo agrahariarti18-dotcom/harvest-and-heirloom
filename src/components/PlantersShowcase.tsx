@@ -133,6 +133,60 @@ const products: Product[] = [
       { name: "Sunshine Yellow", swatch: "#f6c243", images: [terracottaGeo.url] },
     ],
   },
+  {
+    id: "swirl-ceramic",
+    name: "Hand-Painted Swirl Ceramic Planter (Set of 3)",
+    category: "Premium Ceramic",
+    tagline: "Glossy ceramic planters with hand-drawn swirl artwork on gold tripod stands",
+    description:
+      "A signature set of three nesting ceramic planters, each finished with intricate hand-painted swirl detailing and presented on golden iron tripod stands. Sold as a coordinated set or single sizes — a centrepiece for premium retail and gifting.",
+    cover: swirlWhite.url,
+    material: "Glazed ceramic · Gold-finish iron stand",
+    sizes: ["Small", "Medium", "Large", "Set of 3"],
+    colors: [
+      { name: "Ivory & Bronze", swatch: "#f1ead8", images: [swirlWhite.url] },
+      { name: "Black & Gold", swatch: "#1a1208", images: [swirlBlack.url] },
+    ],
+  },
+  {
+    id: "brass-cylinder-vase",
+    name: "Brushed Brass Cylinder Vase",
+    category: "Luxury Vase",
+    tagline: "Brushed-finish brass cylinders for floral and table styling",
+    description:
+      "A timeless trio of brushed brass cylindrical vases, perfect for floral arrangements, candles, or styling on console tables. Designed for boutique hotels, event styling, and luxury gifting.",
+    cover: brassCylinder.url,
+    material: "Brushed brass",
+    sizes: ["Mini 3\"", "Medium 5\"", "Tall 7\""],
+    colors: [{ name: "Brushed Brass", swatch: "#c9a96a", images: [brassCylinder.url] }],
+  },
+  {
+    id: "enamel-bucket",
+    name: "Enamel Print Bucket Planter",
+    category: "Artisan Print",
+    tagline: "Glossy enamel-finish planters in bold prints and solid colours",
+    description:
+      "Steel bucket planters dipped in glossy enamel and finished with either a vibrant folk-art print or a starlit black-glitter coat. Lightweight, durable, and made for indoor styling.",
+    cover: enamelFloral.url,
+    material: "Enamel-coated steel",
+    sizes: ["Small (10.5cm)", "Medium (13cm)"],
+    colors: [
+      { name: "Folk Floral Teal", swatch: "#2a8a90", images: [enamelFloral.url] },
+      { name: "Starlit Black", swatch: "#0e0e10", images: [enamelBlack.url] },
+    ],
+  },
+  {
+    id: "hanging-ikat",
+    name: "Ikat Print Hanging Railing Planter",
+    category: "Balcony Decor",
+    tagline: "Hook-style hanging planter with vivid ikat artwork",
+    description:
+      "A double-hook railing planter ideal for balconies, terraces, and outdoor cafes. Vivid ikat-inspired prints on a glossy enamel base, finished with a lime-green rim and matching hooks.",
+    cover: hangingIkat.url,
+    material: "Enamel-coated steel",
+    sizes: ["Standard"],
+    colors: [{ name: "Teal Ikat", swatch: "#1f6b6f", images: [hangingIkat.url] }],
+  },
 ];
 
 export function PlantersShowcase() {
