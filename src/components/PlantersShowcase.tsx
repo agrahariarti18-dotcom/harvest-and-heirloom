@@ -48,9 +48,9 @@ const products: Product[] = [
     material: "Iron · Powder-coated stand",
     sizes: ["Small (6\")", "Medium (8\")", "Large (10\")"],
     colors: [
-      { name: "Sapphire Blue", swatch: "#1e3a8a", images: [globeBlue.url] },
-      { name: "Antique Gold", swatch: "#9a7b4f", images: [globeGold.url] },
-      { name: "Burnished Copper", swatch: "#b87333", images: [globeCopper.url] },
+      { name: "Sapphire Blue", swatch: "#1e3a8a", images: [globeBlue.url, globeBlueReal.url] },
+      { name: "Antique Gold", swatch: "#9a7b4f", images: [globeGold.url, globeGoldReal.url] },
+      { name: "Burnished Copper", swatch: "#b87333", images: [globeCopper.url, globeCopperReal.url] },
       { name: "Ruby Red", swatch: "#9b1c2e", images: [globeRed.url] },
     ],
   },
