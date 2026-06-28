@@ -22,6 +22,13 @@ import enamelFloral from "@/assets/planters/enamel-floral.jpg.asset.json";
 import hangingIkat from "@/assets/planters/hanging-ikat.jpg.asset.json";
 import swirlWhite from "@/assets/planters/swirl-white.jpg.asset.json";
 import swirlBlack from "@/assets/planters/swirl-black.jpg.asset.json";
+import hammeredGold from "@/assets/planters/hammered-gold.jpg.asset.json";
+import archBrass from "@/assets/planters/arch-brass.jpg.asset.json";
+import glossyTeal from "@/assets/planters/glossy-teal.jpg.asset.json";
+import goldVstand from "@/assets/planters/gold-vstand.jpg.asset.json";
+import cartTrolley from "@/assets/planters/cart-trolley.jpg.asset.json";
+import cobaltCylinder from "@/assets/planters/cobalt-cylinder.jpg.asset.json";
+import birdcageBowl from "@/assets/planters/birdcage-bowl.jpg.asset.json";
 
 type ColorVariant = { name: string; swatch: string; images: string[] };
 type Product = {
