@@ -22,6 +22,13 @@ import enamelFloral from "@/assets/planters/enamel-floral.jpg.asset.json";
 import hangingIkat from "@/assets/planters/hanging-ikat.jpg.asset.json";
 import swirlWhite from "@/assets/planters/swirl-white.jpg.asset.json";
 import swirlBlack from "@/assets/planters/swirl-black.jpg.asset.json";
+import hammeredGold from "@/assets/planters/hammered-gold.jpg.asset.json";
+import archBrass from "@/assets/planters/arch-brass.jpg.asset.json";
+import glossyTeal from "@/assets/planters/glossy-teal.jpg.asset.json";
+import goldVstand from "@/assets/planters/gold-vstand.jpg.asset.json";
+import cartTrolley from "@/assets/planters/cart-trolley.jpg.asset.json";
+import cobaltCylinder from "@/assets/planters/cobalt-cylinder.jpg.asset.json";
+import birdcageBowl from "@/assets/planters/birdcage-bowl.jpg.asset.json";
 
 type ColorVariant = { name: string; swatch: string; images: string[] };
 type Product = {
@@ -186,6 +193,92 @@ const products: Product[] = [
     material: "Enamel-coated steel",
     sizes: ["Standard"],
     colors: [{ name: "Teal Ikat", swatch: "#1f6b6f", images: [hangingIkat.url] }],
+  },
+  {
+    id: "hammered-gold",
+    name: "Hammered Gold Ceramic Pot (Set of 2)",
+    category: "Tabletop Decor",
+    tagline: "Dimpled gold ceramic pots with a luxurious hand-hammered finish",
+    description:
+      "A coordinated pair of ceramic planters dipped in a warm gold glaze and finished with a tactile hammered-dimple texture. Ideal for tabletops, console styling, and luxury gifting.",
+    cover: hammeredGold.url,
+    material: "Glazed ceramic · Gold finish",
+    sizes: ["Small 4\"", "Medium 5\"", "Set of 2"],
+    colors: [{ name: "Hammered Gold", swatch: "#c9a35a", images: [hammeredGold.url] }],
+  },
+  {
+    id: "arch-stand-brass",
+    name: "Arch-Stand Brushed Brass Planter",
+    category: "Modern Decor",
+    tagline: "Brushed brass cylinder elevated on an architectural gold arch stand",
+    description:
+      "A statement indoor planter pairing a brushed brass cylinder with a sculptural arched gold-finish iron stand. Adds a refined, mid-century-modern silhouette to any room.",
+    cover: archBrass.url,
+    material: "Brushed brass · Gold-finish iron",
+    sizes: ["Medium 6\"", "Tall 9\""],
+    colors: [{ name: "Brushed Brass", swatch: "#c9a96a", images: [archBrass.url] }],
+  },
+  {
+    id: "glossy-cylinder",
+    name: "Glossy Cylinder Planter with Gold Stand",
+    category: "Indoor Decor",
+    tagline: "High-gloss ceramic cylinder cradled in a minimalist gold frame",
+    description:
+      "A glossy enamel-finished cylindrical pot held in a slim gold-finish iron stand. Designed for elegant indoor styling, fresh florals, and boutique gifting.",
+    cover: glossyTeal.url,
+    material: "Glazed ceramic · Gold-finish iron",
+    sizes: ["Small", "Medium"],
+    colors: [
+      { name: "Emerald Green", swatch: "#0e5b4f", images: [glossyTeal.url] },
+    ],
+  },
+  {
+    id: "gold-vstand",
+    name: "Gold Sphere V-Stand Planter",
+    category: "Minimalist",
+    tagline: "Matte gold sphere balanced on a geometric black wire V-stand",
+    description:
+      "A modern sculptural planter combining a matte gold metal sphere with a graphic black wire V-shaped base. A bold accent piece for desks, shelves, and modern interiors.",
+    cover: goldVstand.url,
+    material: "Metal · Powder-coated iron",
+    sizes: ["Standard 5\""],
+    colors: [{ name: "Matte Gold", swatch: "#b8924a", images: [goldVstand.url] }],
+  },
+  {
+    id: "cart-trolley",
+    name: "Vintage Cart Trolley Planter",
+    category: "Garden Decor",
+    tagline: "Wrought-iron cart trolley cradling a brushed brass bucket",
+    description:
+      "A whimsical vintage-style trolley in matte black wrought iron, holding a brushed brass bucket planter. A charming accent for entryways, balconies, and boutique retail displays.",
+    cover: cartTrolley.url,
+    material: "Wrought iron · Brushed brass",
+    sizes: ["Standard"],
+    colors: [{ name: "Black & Brass", swatch: "#3a2a18", images: [cartTrolley.url] }],
+  },
+  {
+    id: "cobalt-cylinder",
+    name: "Cobalt Cylinder Planter with Stand",
+    category: "Modern Decor",
+    tagline: "Vivid cobalt cylinder on a matching tonal iron stand",
+    description:
+      "A bold cobalt blue cylindrical planter set on a tonal blue powder-coated iron stand. Brings a pop of saturated colour to neutral living rooms, studios, and modern interiors.",
+    cover: cobaltCylinder.url,
+    material: "Metal · Powder-coated iron",
+    sizes: ["Medium 7\"", "Tall 9\""],
+    colors: [{ name: "Cobalt Blue", swatch: "#1b4cc4", images: [cobaltCylinder.url] }],
+  },
+  {
+    id: "birdcage-bowl",
+    name: "Matte Black Bowl on Gold Birdcage Stand",
+    category: "Designer Planter",
+    tagline: "Matte black hemisphere bowl raised on a gold birdcage frame",
+    description:
+      "An elegant matte black hemispherical bowl planter resting on a tall gold-finish birdcage stand. A standout silhouette for entryways, side tables, and luxury interiors.",
+    cover: birdcageBowl.url,
+    material: "Metal · Gold-finish iron",
+    sizes: ["Standard 8\""],
+    colors: [{ name: "Matte Black & Gold", swatch: "#1a1a1a", images: [birdcageBowl.url] }],
   },
 ];
 
