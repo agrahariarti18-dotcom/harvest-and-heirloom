@@ -97,8 +97,8 @@ function TopBar() {
       <div className="container-luxe flex flex-wrap items-center justify-between gap-2 py-2">
         <span className="opacity-80">Trusted Global Exporter from India · IEC Registered</span>
         <span className="hidden sm:flex items-center gap-4 opacity-80">
-          <a href="mailto:exports@hortihand.com" className="hover:text-gold transition-colors flex items-center gap-1.5">
-            <Mail className="h-3 w-3" /> exports@hortihand.com
+          <a href="mailto:export@hortihandexim.com" className="hover:text-gold transition-colors flex items-center gap-1.5">
+            <Mail className="h-3 w-3" /> export@hortihandexim.com
           </a>
           <a href="tel:+919958096383" className="hover:text-gold transition-colors flex items-center gap-1.5">
             <Phone className="h-3 w-3" /> +91 99580 96383
@@ -747,7 +747,7 @@ function Contact() {
           <p className="text-cream/80 leading-relaxed mb-10 max-w-md">Tell us about your sourcing needs. Our export team responds within one business day with pricing, samples and logistics options.</p>
           <div className="space-y-5">
             {[
-              { icon: Mail, label: "exports@hortihand.com" },
+              { icon: Mail, label: "export@hortihandexim.com" },
               { icon: Phone, label: "+91 99580 96383" },
               { icon: MapPin, label: "India · Global Exports" },
             ].map(({ icon: Icon, label }) => (
