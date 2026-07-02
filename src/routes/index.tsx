@@ -97,8 +97,8 @@ function TopBar() {
       <div className="container-luxe flex flex-wrap items-center justify-between gap-2 py-2">
         <span className="opacity-80">Trusted Global Exporter from India · IEC Registered</span>
         <span className="hidden sm:flex items-center gap-4 opacity-80">
-          <a href="mailto:exports@hortihand.com" className="hover:text-gold transition-colors flex items-center gap-1.5">
-            <Mail className="h-3 w-3" /> exports@hortihand.com
+          <a href="mailto:export@hortihandexim.com" className="hover:text-gold transition-colors flex items-center gap-1.5">
+            <Mail className="h-3 w-3" /> export@hortihandexim.com
           </a>
           <a href="tel:+919958096383" className="hover:text-gold transition-colors flex items-center gap-1.5">
             <Phone className="h-3 w-3" /> +91 99580 96383
