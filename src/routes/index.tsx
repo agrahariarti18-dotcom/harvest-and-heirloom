@@ -747,7 +747,7 @@ function Contact() {
           <p className="text-cream/80 leading-relaxed mb-10 max-w-md">Tell us about your sourcing needs. Our export team responds within one business day with pricing, samples and logistics options.</p>
           <div className="space-y-5">
             {[
-              { icon: Mail, label: "exports@hortihand.com" },
+              { icon: Mail, label: "export@hortihandexim.com" },
               { icon: Phone, label: "+91 99580 96383" },
               { icon: MapPin, label: "India · Global Exports" },
             ].map(({ icon: Icon, label }) => (
