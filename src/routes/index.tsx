@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { PlantersShowcase } from "@/components/PlantersShowcase";
+import { BarwareShowcase } from "@/components/BarwareShowcase";
 import logoAsset from "@/assets/hortihand-logo.png.asset.json";
 import productRed from "@/assets/product-red-dragon.jpg";
 import productWhite from "@/assets/product-white-dragon.jpg";
