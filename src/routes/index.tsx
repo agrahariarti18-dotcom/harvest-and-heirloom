@@ -40,6 +40,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Exporting India's finest fresh dragon fruits and handcrafted brass treasures to global buyers. Quality-assured, certified, and shipped worldwide." },
       { property: "og:title", content: "HortiHand EXIM — Fresh Harvests & Handicraft Treasures" },
       { property: "og:description", content: "Global B2B export of premium dragon fruit and brass handicrafts from India." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Landing,
