@@ -4,14 +4,24 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import bowlRed from "@/assets/jewellery-new/floral-bowl-red.jpeg.asset.json";
 import bowlSilver from "@/assets/jewellery-new/floral-bowl-silver.jpeg.asset.json";
+import bowlNavy from "@/assets/jewellery-new/enamel-bowl-navy.jpeg.asset.json";
+import bowlGarden from "@/assets/jewellery-new/enamel-bowl-garden.jpeg.asset.json";
+import bowlBright from "@/assets/jewellery-new/enamel-bowl-bright.jpeg.asset.json";
+import scallopIvory from "@/assets/jewellery-new/enamel-scallop-bowl-ivory.jpeg.asset.json";
+import scallopEmerald from "@/assets/jewellery-new/enamel-scallop-bowl-emerald.jpeg.asset.json";
 import mugGold from "@/assets/jewellery-new/floral-mug-gold.jpeg.asset.json";
 import mugWhite from "@/assets/jewellery-new/floral-mug-white.jpeg.asset.json";
 import plateGold from "@/assets/jewellery-new/floral-plate-gold.jpeg.asset.json";
 import plateWhiteLarge from "@/assets/jewellery-new/floral-plate-white-large.jpeg.asset.json";
 import plateWhiteSmall from "@/assets/jewellery-new/floral-plate-white-small.jpeg.asset.json";
+import plateIvoryGarden from "@/assets/jewellery-new/enamel-plate-ivory-garden.jpeg.asset.json";
+import plateGiftBox from "@/assets/jewellery-new/enamel-plate-giftbox.jpeg.asset.json";
+import plateCrimsonMedallion from "@/assets/jewellery-new/enamel-plate-crimson-medallion.jpeg.asset.json";
+import plateSage from "@/assets/jewellery-new/enamel-plate-sage.jpeg.asset.json";
 import trayGoldLarge from "@/assets/jewellery-new/floral-tray-gold-large.jpeg.asset.json";
 import trayWhite from "@/assets/jewellery-new/floral-tray-white.jpeg.asset.json";
 import traysRedWhite from "@/assets/jewellery-new/enamel-trays-red-white.jpeg.asset.json";
+import trayEmerald from "@/assets/jewellery-new/enamel-tray-emerald.jpeg.asset.json";
 
 type ProductCategory = "Bowls" | "Mugs" | "Plates" | "Trays";
 type ProductVariant = { name: string; swatchClass: string; images: string[] };
@@ -39,6 +49,23 @@ const products: Product[] = [
     variants: [
       { name: "Silver Floral", swatchClass: "bg-muted", images: [bowlSilver.url] },
       { name: "Crimson Floral", swatchClass: "bg-destructive", images: [bowlRed.url] },
+      { name: "Royal Blue", swatchClass: "bg-blue-900", images: [bowlNavy.url] },
+      { name: "Garden Bloom", swatchClass: "bg-pink-300", images: [bowlGarden.url] },
+      { name: "Bright Floral", swatchClass: "bg-purple-400", images: [bowlBright.url] },
+    ],
+    sizes: ["Standard"],
+  },
+  {
+    id: "scalloped-floral-enamel-bowl",
+    name: "Scalloped Floral Enamel Bowl",
+    category: "Bowls",
+    tagline: "Wavy-rimmed bowls with richly painted floral grounds",
+    description: "A scalloped-edge serving bowl covered in dense meenakari-style floral work, striking on the table and equally suited to display or gifting.",
+    cover: scallopIvory.url,
+    material: "Metal · Hand-painted floral enamel",
+    variants: [
+      { name: "Ivory Multicolor", swatchClass: "bg-cream", images: [scallopIvory.url] },
+      { name: "Emerald Garden", swatchClass: "bg-emerald-700", images: [scallopEmerald.url] },
     ],
     sizes: ["Standard"],
   },
@@ -67,6 +94,10 @@ const products: Product[] = [
     variants: [
       { name: "Antique Gold", swatchClass: "bg-gold", images: [plateGold.url] },
       { name: "Pearl White", swatchClass: "bg-cream", images: [plateWhiteLarge.url, plateWhiteSmall.url] },
+      { name: "Ivory Garden", swatchClass: "bg-orange-100", images: [plateIvoryGarden.url] },
+      { name: "Gift Box Ivory", swatchClass: "bg-stone-200", images: [plateGiftBox.url] },
+      { name: "Crimson Medallion", swatchClass: "bg-rose-700", images: [plateCrimsonMedallion.url] },
+      { name: "Sage Floral", swatchClass: "bg-lime-200", images: [plateSage.url] },
     ],
     sizes: ["Small", "Large"],
   },
@@ -82,6 +113,7 @@ const products: Product[] = [
       { name: "Pearl White", swatchClass: "bg-cream", images: [trayWhite.url, traysRedWhite.url] },
       { name: "Crimson Red", swatchClass: "bg-destructive", images: [traysRedWhite.url] },
       { name: "Antique Gold", swatchClass: "bg-gold", images: [trayGoldLarge.url] },
+      { name: "Emerald Garden", swatchClass: "bg-emerald-700", images: [trayEmerald.url] },
     ],
     sizes: ["Standard", "Large"],
   },
